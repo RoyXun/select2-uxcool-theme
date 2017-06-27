@@ -345,9 +345,12 @@
     <script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <script src="http://cdn.bootcss.com/select2/4.0.2/js/select2.js"></script>
     <script>
-        $('.s2').select2();
+        $('.s2').select2({
+            placeholder: 'placeholder'
+        });
         $('.bs').select2({
-            theme: 'bootstrap'
+            theme: 'bootstrap',
+            placeholder: 'placeholder'
         });
         $('.ux-single').select2({
             theme: 'uxcool',
@@ -361,7 +364,7 @@
         });
         $('.ux-multiple').select2({
             theme: 'uxcool',
-            multiple: true,
+            placeholder: 'placeholder',
             closeOnSelect: false
         });
     </script>
